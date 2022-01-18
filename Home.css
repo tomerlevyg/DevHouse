@@ -200,7 +200,9 @@
 }
 
 .u-section-2 .u-list-item-1 {
-  background-image: none;
+  --animation-slide_in_left-translate_x: -49px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0);
 }
 
 .u-section-2 .u-container-layout-1 {
@@ -221,7 +223,9 @@
 }
 
 .u-section-2 .u-list-item-2 {
-  background-image: none;
+  --animation-slide_in_right-translate_x: 50px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0);
 }
 
 .u-section-2 .u-container-layout-2 {
@@ -239,6 +243,12 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 20px 0 0;
+}
+
+.u-section-2 .u-list-item-3 {
+  --animation-slide_in_left-translate_x: -51px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0);
 }
 
 .u-section-2 .u-container-layout-3 {
@@ -259,7 +269,9 @@
 }
 
 .u-section-2 .u-list-item-4 {
-  background-image: none;
+  --animation-slide_in_right-translate_x: 50px;
+  transition-duration: 0.5s;
+  box-shadow: 2px 0 0 0 rgba(0,0,0,0);
 }
 
 .u-section-2 .u-container-layout-4 {
@@ -387,6 +399,58 @@
     grid-template-columns: repeat(1, 100%);
     min-height: 760px;
   }
+}
+
+.u-section-2 .u-list-item-1,
+.u-section-2 .u-list-item-1:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-2 .u-list-item-1.u-list-item-1.u-list-item-1:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-1.u-list-item-1.u-list-item-1.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-2,
+.u-section-2 .u-list-item-2:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-2 .u-list-item-2.u-list-item-2.u-list-item-2:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-2.u-list-item-2.u-list-item-2.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-3,
+.u-section-2 .u-list-item-3:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-2 .u-list-item-3.u-list-item-3.u-list-item-3:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-3.u-list-item-3.u-list-item-3.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-4,
+.u-section-2 .u-list-item-4:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+}
+
+.u-section-2 .u-list-item-4.u-list-item-4.u-list-item-4:hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
+}
+
+.u-section-2 .u-list-item-4.u-list-item-4.u-list-item-4.hover {
+  box-shadow: 2px 2px 8px 0 rgba(128,128,128,1) !important;
 } .u-section-3 {
   background-image: none;
 }
@@ -410,6 +474,13 @@
   width: 570px;
   height: 352px;
   margin: 36px auto 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-image-1 {
+    --animation-roll_in-rotate: -92deg;
+    --animation-roll_in-translate_x: -80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -703,6 +774,11 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-5 .u-shape-1 {
+    transition-duration: 0.5s;
+    transform: translateX(10px) translateY(0px) scale(1);
+  }
+
   .u-section-5 .u-group-1 {
     margin-left: calc(((100% - 940px) / 2));
   }
